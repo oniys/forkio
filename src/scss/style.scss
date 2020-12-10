@@ -1,3 +1,7 @@
 //подключение стилей  scss
 @import "global/reset";
 @import "global/fonts";
+
+.container{
+  max-width: 1200px;
+}
