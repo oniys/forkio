@@ -5,14 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Forkio</title>
 </head>
 <body>
-<!--подключение  HTML секций -->
+
+
+@@include('component/_header-preview.html')
 <div class="container">
 @@include('sections/_header.html')
 @@include('sections/_main.html')
 @@include('sections/_footer.html')
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

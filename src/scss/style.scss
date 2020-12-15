@@ -1,7 +1,11 @@
 //подключение стилей  scss
 @import "global/reset";
 @import "global/fonts";
+@import "sections/header";
+@import "sections/background-section";
+@import "component/buttons";
 
 .container{
   max-width: 1200px;
+  margin: 0 auto;
 }
