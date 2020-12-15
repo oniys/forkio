@@ -1,0 +1,15 @@
+@import "src/scss/global/variable";
+@import "src/scss/global/mixin";
+
+
+.btn-header{
+  @include buttons-style($color-header-btn);
+}
+
+
+
+
+
+
+
+
