@@ -1,6 +1,9 @@
 //подключение стилей  scss
 @import "global/reset";
 @import "global/fonts";
+@import "mixin";
+@import "sections/revolutionary";
+@import "all-media";
 @import "sections/header";
 @import "sections/background-section";
 @import "component/buttons";
@@ -9,3 +12,4 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
