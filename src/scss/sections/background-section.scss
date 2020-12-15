@@ -1,0 +1,22 @@
+@import "src/scss/global/mixin";
+
+
+//.background-section{
+//  @include image-wrapper;
+//}
+//.intro{
+//  @include images-position(100%,auto);
+//}
+
+.background-section{
+}
+.intro{
+  position:fixed;
+  top:0;
+  //z-index: 1;
+  width:100%;
+  height:100%;
+  background-position-x: center;
+  background-image:url('/img/forkiowep.jpg');
+  background-repeat: no-repeat;
+}

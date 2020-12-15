@@ -1,0 +1,119 @@
+@import "src/scss/global/mixin";
+@import "src/scss/global/media";
+
+.header{
+  position: relative;
+}
+.menu{
+    padding: 0 10px;
+   @include flex (row,space-between,center,nowrap);
+  .link-home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    font-family: Lato, Montserrat, sans-serif;
+    transition: .15s;
+  }
+  & .link-home:hover {
+    color: #FFFFFF;
+
+    filter: invert(0%) sepia(0) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(1000%);
+  }
+
+
+  & .img-logo{
+    @include logo;
+    background-image: url('../img/logo.svg');
+
+  }
+    & .box:first-child{
+      flex: 1
+    }
+    & .box:nth-child(2){
+      //order: 1;
+      .menu-list .menu-link{
+        text-decoration: none;
+        color: $color-text-menu;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 18px;
+        font-family: Montserrat, Roboto, sans-serif;
+        transition: .15s;
+      }
+      & .menu-link:hover{
+        color: #FFFFFF;
+      }
+      width: 660px;
+      margin: 0 48px;    }
+
+  & .box:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  & .menu-list {
+    @include flex(row, space-between, normal, nowrap);
+  }
+  .logo{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $color-text-menu;
+  }
+}
+
+.burger-menu {
+  position: relative;
+  display: none;
+  background-color: transparent;
+  width: 44px;
+  height: 37px;
+
+}
+.burger-menu:hover{
+  & .burger-menu-line:nth-child(1){
+    width: 15px;
+  }
+}
+.burger-menu-line {
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  width: 26px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: .1s;
+}
+#second, #third{
+  top: 18px;
+}
+#four{
+  top: 28px;
+}
+.show {
+  display: none;
+}
+.burgerX{
+  transform: rotate(45deg);
+  transition: .3s;
+}
+.burgerY{
+  transform: rotate(-45deg);
+  transition: .3s;
+}
+
+.title{
+  padding-top: 126px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 82px;
+  line-height: 82px;
+  color: #FFFFFF;
+}

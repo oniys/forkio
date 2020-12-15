@@ -4,9 +4,12 @@
 @import "mixin";
 @import "sections/revolutionary";
 @import "all-media";
-
+@import "sections/header";
+@import "sections/background-section";
+@import "component/buttons";
 
 .container{
+  max-width: 1200px;
   margin: 0 auto;
-  width: 1200px;
 }
+
