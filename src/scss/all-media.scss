@@ -1,4 +1,12 @@
 @media (min-width: 320px)and(max-width: 480px) {
+  .price-title{
+    font-size: 36px;
+    padding-top: 14px;
+    padding-bottom: 35px;
+  }
+  .price-card:nth-child(3){
+    margin: 40px 0;
+  }
   .container {
     width: auto;
   }
@@ -62,7 +70,7 @@
   }
 }
 
-@media (min-width: 993px)and(max-width: 1190px) {
+@media (min-width: 993px)and(max-width: 1120px) {
   .price-group{
     grid-template-columns: (repeat(auto-fill,257px 257px 299px ));
   }
@@ -72,11 +80,18 @@
 }
 
 @media (min-width: 481px)and(max-width: 992px) {
-
+  .price-title{
+    font-size: 42px;
+    padding-top: 85px;
+  }
  .price-group{
    grid-template-columns: (repeat(auto-fill,299px 257px));
    grid-column-gap: 5px
  }
+  .price-card:nth-child(3){
+    padding-right: 40px;
+    background-clip: content-box;
+  }
   .container{
     width: auto;
   }
@@ -119,5 +134,10 @@
 @media (min-width: 481px)and(max-width: 570px) {
   .price-group{
     grid-template-columns: (repeat(auto-fill,299px));
+
+  }
+  .price-card:nth-child(3){
+    padding-right: 0;
+    background-clip: content-box;
   }
 }
