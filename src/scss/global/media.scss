@@ -9,7 +9,43 @@
       margin: 0 auto;
     }
   }
+  .title{
+    padding-top: 68px;
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .subtitle{
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .subheading_title{
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .testmonials-title{
+    padding-bottom: 88px;
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  .testmonials-cart-content{
+    grid-column-gap: 81px;
+    grid-row-gap: 62px;
+  }
 }
+@media (min-width: 481px) and (max-width: 710px) {
+  .testmonials-cart-content{
+    grid-column-gap: 2px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(288px,1fr));
+  }
+}
+@media (min-width: 481px) and (max-width: 580px) {
+  .testmonials-cart-content{
+    grid-template-columns: repeat(auto-fill,minmax(238px,1fr));
+  }
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   .menu{
@@ -21,30 +57,12 @@
     flex-direction: column;
     }
 
-  //
-  //& .menu li{
-  //  &:hover{
-  //    background: red;
-  //    .menu-link{
-  //      color: #463048;
-  //    }
-  //  }
-  //
-  //  // li>a:hover{
-  //  //  border-left: 8px solid #8D81AC;
-  //  // color: #463048;
-  //  //}
-  //}
-
-
   & li {
     padding-top: 29px;
     padding-bottom: 21px;
     border-bottom: 3px solid #3b3b3b;
     background: #333333;
   }
-
-
   & li:last-child{
     box-shadow: 0 14px 0 #333333;
   }
@@ -54,7 +72,6 @@
     color: #ffffff;
     font-weight: normal;
     padding-left: 34px;
-
   }
 
   .menu .box:nth-child(2) .menu-list li:hover{
@@ -66,8 +83,6 @@
       color: #8D81AC;
     }
   }
-
-
   .btn-header{
     width: 119px;
     height: 37px;
@@ -76,15 +91,35 @@
     order: 1;
     margin: 0 5px;
   }
-
-  .menu .box:nth-child(3) {
-    width: 65%;
-  }
+  .menu .box:nth-child(3) {width: 65%;}
     .burger-menu{
     display: block;
   }
-.logo{
-  display: none;
-}
+  .logo{display: none;}
+  .title{
+    padding-top: 50px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .subtitle{
+    font-size: 18px;
+    padding: 0 5%;
+  }
+  .subheading_title{
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .testmonials-title{
+    padding-bottom: 53px;
+    font-size: 36px;
+    line-height: 48px;
+  }
 
+  .testmonials-cart-content{
+    grid-row-gap: 45px;
+  }
+  .testmonials-coment{
+    margin: 0 auto;
+    width: 70%;
+  }
 }

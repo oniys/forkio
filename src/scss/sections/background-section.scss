@@ -1,23 +1,54 @@
 @import "src/scss/global/mixin";
-
-
-//.background-section{
-//  @include image-wrapper;
-//}
-//.intro{
-//  @include images-position(100%,auto);
-//}
-
-.background-section{
-}
-.intro{
-  //position:fixed;
-  padding-bottom: 718px;
-  top:0;
-  //z-index: 1;
+.intro-header{
   width:100%;
-  height:100%;
+  height: 768px;
   background-position-x: center;
   background-image:url('/img/forkiowep.jpg');
   background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.intro-testmonials{
+  width:100%;
+  height: 768px;
+  background-position-x: center;
+  background-image:url('/img/testmonials.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+//Logo Company
+.testmonials-logo-compani{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 64px;
+
+}
+.logos1{
+  background-image:url('/img/icon-company/smashing.png');
+  width: 165px;
+}
+.logos2{
+  background-image:url('/img/icon-company/codrops.png');
+  width: 148px;
+}
+.logos3{
+  background-image:url('/img/icon-company/wert.png');
+  width: 64px;
+}
+.logos4{
+  background-image:url('/img/icon-company/PixelBuddha.png');
+  width: 225px;
+}
+.logos5{
+  background-image:url('/img/icon-company/CreativeBloq.png');
+  width: 166px;
+}
+.logos6{
+  background-image:url('/img/icon-company/tnw.png');
+  width: 108px;
 }
