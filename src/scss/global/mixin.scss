@@ -25,6 +25,7 @@
   @if $type == $color-header-btn {
     @include size-xy(145,37);
     @include flex(row,center,center,nowrap);
+    font-family: Montserrat,sans-serif;
     background: $color-header-btn;
     border: 1px solid $color-header-btn;
     border-radius: 40px;

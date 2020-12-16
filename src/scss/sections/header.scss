@@ -32,7 +32,6 @@
       flex: 1
     }
     & .box:nth-child(2){
-      //order: 1;
       .menu-list .menu-link{
         text-decoration: none;
         color: $color-text-menu;
@@ -59,7 +58,7 @@
     @include flex(row, space-between, normal, nowrap);
   }
   .logo{
-    font-weight: bold;
+    font-weight: normal;
     font-size: 24px;
     line-height: 16px;
     text-transform: uppercase;
@@ -109,11 +108,28 @@
 }
 
 .title{
-  padding-top: 126px;
+  padding-top: 100px;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 82px;
   line-height: 82px;
   color: #FFFFFF;
+  padding-bottom: 12px;
+}
+.subtitle{
+  font-family: Lato,sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #8D81AC;
+  padding-bottom: 19px;
+}
+.subheading_title{
+  font-family: Montserrat,sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #848E97;
 }
