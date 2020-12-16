@@ -1,38 +1,25 @@
 @import "src/scss/global/variable";
 @import "src/scss/global/mixin";
-.container-group{
-  display: flex;
-  justify-content: center;
-}
+
 .price-group{
-  //width: 90%;
   @include grid(repeat(auto-fill,257px 257px 299px 257px ),15px, 71px);
   margin: 0 auto;
-  //display: grid;
-  //justify-content: center;
   justify-items: center;
   grid-template-rows: 457px;
-  //grid-auto-columns: 100px;
   width: fit-content;
+  padding-bottom: 40px;
 
 }
 
 .price-card:nth-child(3){
-  //@include grid(repeat(auto-fill, minmax(299px,299px)),0, 0);
   grid-template-rows: 560px;
-  zoom: 1.2;
-  margin: -15px 0;
-  //padding-bottom: 40px;
-  &-title{
-    //vertical-align: center;
-    //margin-top: 36px;
-    //text-align: center;
-    //background: rgba(255, 255, 255, 0.06);
-    //width: 257px;
-    //height: 97px;
-    //font-size: 24px;
-    //line-height: 97px;
-    //text-transform: uppercase;
+  transform: scale(1.2);
+  background: rgba(70, 48, 72, 0.84);
+  .price-card-title{
+    background: rgba(0, 0, 0, 0.11);
+  }
+  .box-price{
+    font-size: 82px;
   }
 }
 .price-title{
@@ -50,11 +37,8 @@
   background: rgba(255, 255, 255, 0.11);
   color: #ffffff;
   &-title{
-    //vertical-align: center;
-    //margin-top: 36px;
     text-align: center;
     background: rgba(255, 255, 255, 0.06);
-    //width: 257px;
     height: 97px;
     font-size: 24px;
     line-height: 97px;
@@ -62,9 +46,7 @@
   }
   &-box{
     display: grid;
-    //justify-content: center;
-    //grid-row-gap: 25px;
-    //padding-top: 25px;
+    justify-items: center;
 
     & > .box-price{
       text-align: center;
@@ -72,6 +54,10 @@
       font-size: 60px;
       line-height: 90px;
       padding-top: 25px;
+      font-weight: bold;
+    } & > .box-price:before{
+     content: '$';
+    font-weight: normal;
     }
     & > .box-after{
       text-align: center;
@@ -97,10 +83,8 @@
       padding: 0 10px 35px 10px;
     }
     & > .box-btn{
-      margin: 0 auto;
-      //display: block;
-    @include buttons-style($color-section-main)
-      //margin-bottom: 16px;
+    @include buttons-style($color-section-main);
+      margin-bottom: 26px;
     }
   }
 }
