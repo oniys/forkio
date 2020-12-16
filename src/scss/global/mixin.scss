@@ -19,7 +19,6 @@
 }
 
 
-// Button component
 @mixin buttons-style($color){
   $type: $color;
   @if $type == $color-header-btn {

@@ -12,17 +12,34 @@
 
 
 
+
 <div class="container">
     <div class="intro-header">
+        <div class="container">
     @@include('sections/_header.html')
     @@include('component/_header-preview.html')
+        </div>
     </div>
+<div class="container box-background-section">
     @@include('component/_download.html')
 @@include('sections/_revolutionary.html')
+</div>
+
+<div class="intro-gray-container">
+<div class="container">
+    @@include('sections/_section-fork.html')
+</div>
+</div>
+
     <div class="intro-testmonials">
-@@include('sections/_testmonials.html')
-@@include('sections/_price.html')
+        <div class="container">
+        @@include('sections/_testmonials.html')
+        @@include('sections/_price.html')
+        </div>
     </div>
+
+
+
 <script src="js/script.min.js"></script>
 </div>
 </body>
