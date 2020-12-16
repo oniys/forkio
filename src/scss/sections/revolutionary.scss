@@ -72,11 +72,7 @@
   }
 }
 
-
-
 .gray{
-  background-color: #F4F4F4;
-  background-size: cover;
   display: flex;
   padding: 100px 0 40px 0;
   &-box{
@@ -163,10 +159,6 @@ width: 111px;
     display: flex;
     justify-content: flex-end;
     width: 100%
-    //margin-right: -300px;
-    //max-width: 719px;
-    //max-width: 100%;
-    //display: block;
   }
   &-img{
     background-image: url('/img/editor.png');
@@ -176,8 +168,6 @@ width: 111px;
     background-repeat: no-repeat;
     background-position-x: right;
     padding-bottom: 519px;
-    //float: right;
-    //overflow: hidden;
-
   }
 }
+

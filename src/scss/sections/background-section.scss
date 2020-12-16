@@ -10,27 +10,15 @@
 
 .intro-testmonials{
   width:100%;
-  height: 846px;
   background-position-x: center;
-  background-image:url('/img/testmonials.jpg'), url('/img/laye.jpg');
+  background-image:url('/img/testmonials.jpg');
   background-repeat: no-repeat;
   background-size: auto;
-  //background-size: cover;
-  background-position: top, bottom;
-  padding-bottom: 100vh;
-  //border: none;
-
+  padding-bottom: 15%;
 }
-
-//.intro-price{
-//  width:100%;
-//  height: 768px;
-//  background-position-x: center;
-//  background-image:url('/img/laye.jpg');
-//  background-repeat: no-repeat;
-//  background-size: auto;
-//}
-//Logo Company
+.intro-gray-container{
+  background-color: #F4F4F4;
+}
 .testmonials-logo-compani{
   display: block;
   margin: 0 auto;
