@@ -1,0 +1,107 @@
+@import "src/scss/global/variable";
+@import "src/scss/global/mixin";
+.container-group{
+  display: flex;
+  justify-content: center;
+}
+.price-group{
+  //width: 90%;
+  @include grid(repeat(auto-fill,257px 257px 299px 257px ),15px, 71px);
+  margin: 0 auto;
+  //display: grid;
+  //justify-content: center;
+  justify-items: center;
+  grid-template-rows: 457px;
+  //grid-auto-columns: 100px;
+  width: fit-content;
+
+}
+
+.price-card:nth-child(3){
+  //@include grid(repeat(auto-fill, minmax(299px,299px)),0, 0);
+  grid-template-rows: 560px;
+  zoom: 1.2;
+  margin: -15px 0;
+  //padding-bottom: 40px;
+  &-title{
+    //vertical-align: center;
+    //margin-top: 36px;
+    //text-align: center;
+    //background: rgba(255, 255, 255, 0.06);
+    //width: 257px;
+    //height: 97px;
+    //font-size: 24px;
+    //line-height: 97px;
+    //text-transform: uppercase;
+  }
+}
+.price-title{
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 110px;
+  padding-top: 110px;
+}
+.price-card{
+  font-family: Montserrat, sans-serif;
+  background: rgba(255, 255, 255, 0.11);
+  color: #ffffff;
+  &-title{
+    //vertical-align: center;
+    //margin-top: 36px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.06);
+    //width: 257px;
+    height: 97px;
+    font-size: 24px;
+    line-height: 97px;
+    text-transform: uppercase;
+  }
+  &-box{
+    display: grid;
+    //justify-content: center;
+    //grid-row-gap: 25px;
+    //padding-top: 25px;
+
+    & > .box-price{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 60px;
+      line-height: 90px;
+      padding-top: 25px;
+    }
+    & > .box-after{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF;
+    }
+    & > .box-line{
+      width: 60px;
+      height: 5px;
+      background: #8D81AC;
+      margin-top: 36px;
+      margin-bottom: 36px;
+    }
+    & > .box-des{
+      display: inline-block;
+      width: 230px;
+      height: 40px;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      padding: 0 10px 35px 10px;
+    }
+    & > .box-btn{
+      margin: 0 auto;
+      //display: block;
+    @include buttons-style($color-section-main)
+      //margin-bottom: 16px;
+    }
+  }
+}
+

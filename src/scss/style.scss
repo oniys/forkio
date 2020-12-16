@@ -8,9 +8,13 @@
 @import "sections/background-section";
 @import "component/buttons";
 @import "sections/testmonials";
+@import "sections/price";
 
 .container{
   max-width: 1200px;
   margin: 0 auto;
+}
+body{
+  background-color: rgba(74, 59, 78, 1);
 }
 
