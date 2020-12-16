@@ -3,4 +3,4 @@ package-lock.json
 .idea/**/*
 *.xml
 *.iml
-dist/**/*
+#dist/**/*
