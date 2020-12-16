@@ -46,6 +46,19 @@
   }
 }
 
+@media (min-width: 1200px) {
+
+  .intro-testmonials{
+    background-size: 100%;
+  }
+  .gray{
+    background-size: 100%;
+  }
+  .intro-header{
+    background: round;
+  }
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   .menu{
