@@ -1,0 +1,47 @@
+@import "src/scss/global/variable";
+@import "src/scss/global/mixin";
+
+.testmonials-title{
+  padding-top: 108px;
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 80px;
+
+}
+.testmonials-cart-content{
+  @include grid(repeat(auto-fill, minmax(315px, 1fr)),24px,100px);
+}
+
+.testmonials-info-compani{
+  font-family: Lato,sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.testmonials-coment{
+  padding-top: 100px;
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #A291A5;
+}
+.testmonials-coment{
+  margin: 0 auto;
+  width: 75%;
+}
+.testmonials-coment-line{
+  width: 65%;
+  height: 2px;
+  background: #645766;
+  opacity: 0.5;
+  margin-top: 20px;
+}

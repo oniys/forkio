@@ -1,3 +1,20 @@
 //подключение стилей  scss
 @import "global/reset";
 @import "global/fonts";
+@import "mixin";
+@import "sections/revolutionary";
+@import "all-media";
+@import "sections/header";
+@import "sections/background-section";
+@import "component/buttons";
+@import "sections/testmonials";
+@import "sections/price";
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .intro-testmonials{
+  background-color: rgba(74, 59, 78, 1);
+}
+

@@ -1,0 +1,29 @@
+@import "src/scss/global/variable";
+@import "src/scss/global/mixin";
+
+
+.btn-header{
+  @include buttons-style($color-header-btn);
+}
+.btn-download{
+  position: relative;
+  top: -20px;
+  left: calc(50% - 145px);
+  @include buttons-style($color-header-btn);
+  width: 290px;
+  height: 45px;
+}
+.btn-subtitle{
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1px;
+  color: #848E97;
+  text-align: center;
+}
+
+
+
+
+

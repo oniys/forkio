@@ -1,0 +1,138 @@
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .menu {
+    padding: 18px 10px;
+    flex-wrap: wrap;
+    background: #27262A;
+    & .box:nth-last-child(2) {
+      order: 1;
+      margin: 0 auto;
+    }
+  }
+  .title{
+    padding-top: 68px;
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .subtitle{
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .subheading_title{
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .testmonials-title{
+    padding-bottom: 88px;
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  .testmonials-cart-content{
+    grid-column-gap: 81px;
+    grid-row-gap: 62px;
+  }
+}
+@media (min-width: 481px) and (max-width: 710px) {
+  .testmonials-cart-content{
+    grid-column-gap: 2px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(288px,1fr));
+  }
+}
+@media (min-width: 481px) and (max-width: 580px) {
+  .testmonials-cart-content{
+    grid-template-columns: repeat(auto-fill,minmax(238px,1fr));
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .menu{
+    background: #27262a;
+    flex-wrap: wrap;
+    height: 75px;
+  }
+  .menu .menu-list {
+    flex-direction: column;
+    }
+
+  & li {
+    padding-top: 20px;
+    padding-bottom: 21px;
+  }
+
+  & .item-link{
+    padding-top: 29px;
+    padding-bottom: 21px;
+    border-bottom: 3px solid #3b3b3b;
+    background: #333333;
+  }
+  & .item-link:last-child{
+    box-shadow: 0 14px 0 #333333;
+  }
+
+  .menu .box:nth-child(2) .menu-list .menu-link {
+    font-size: 26px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: normal;
+    padding-left: 34px;
+  }
+
+  .menu .box:nth-child(2) .menu-list li:hover{
+    cursor: pointer;
+    .menu-link{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-left: 8px solid #8D81AC;
+      color: #8D81AC;
+    }
+  }
+  .btn-header{
+    width: 119px;
+    height: 37px;
+  }
+  .menu .box:nth-child(2) {
+    order: 1;
+    margin: 0 5px;
+  }
+  .menu .box:nth-child(3) {width: 65%;}
+    .burger-menu{
+    display: block;
+  }
+  .logo{display: none;}
+  .title{
+    padding-top: 50px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .subtitle{
+    font-size: 18px;
+    padding: 0 5%;
+  }
+  .subheading_title{
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .testmonials-title{
+    padding-bottom: 53px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .testmonials-cart-content{
+    grid-row-gap: 45px;
+  }
+  .testmonials-coment{
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .intro-header, .intro-testmonials{
+    background: round;
+    background-size: 100%;
+  }
+}
+

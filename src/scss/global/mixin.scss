@@ -1,0 +1,79 @@
+@import "src/scss/global/variable";
+
+@mixin size-xy($width,$height){
+  width: $width+px;
+  height: $height+px;
+}
+@mixin flex($direction,$justify,$aling-item,$wrap){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $aling-item;
+  flex-wrap: $wrap;
+}
+@mixin grid($template,$gap-column,$gap-row) {
+  display: grid;
+  grid-template-columns: $template;
+  grid-column-gap: $gap-column;
+  grid-row-gap: $gap-row;
+}
+
+
+@mixin buttons-style($color){
+  $type: $color;
+  @if $type == $color-header-btn {
+    @include size-xy(145,37);
+    @include flex(row,center,center,nowrap);
+    font-family: Montserrat,sans-serif;
+    background: $color-header-btn;
+    border: 1px solid $color-header-btn;
+    border-radius: 40px;
+    text-decoration: none;
+    color: $color-header-btn-inv;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .35s;
+    &:hover{
+      background: $color-header-btn-inv;
+      color: $color-header-btn;
+    }
+  }@else if $type == $color-section-main {
+    @include size-xy(163,45);
+    @include flex(row,center,center,nowrap);
+    mix-blend-mode: normal;
+    border-radius: 40px;
+    background: $color-section-btn;
+    text-decoration: none;
+    color: $color-section-text-btn;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+
+  }
+}
+
+@mixin logo {
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: block;
+  width: 43px;
+  height: 41px;
+  margin: 17px;
+}
+
+
+@mixin image-wrapper{
+  position: relative;
+}
+
+@mixin images-position($width,$height) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include image-xy($width,$height);
+}
+
+@mixin image-xy($width,$height) {
+  width: $width;
+  height: $height;
+}

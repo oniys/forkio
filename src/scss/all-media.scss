@@ -1,0 +1,143 @@
+@media (min-width: 320px)and(max-width: 480px) {
+  .price-title{
+    font-size: 36px;
+    padding-top: 14px;
+    padding-bottom: 35px;
+  }
+  .price-card:nth-child(3){
+    margin: 40px 0;
+  }
+  .container {
+    width: auto;
+  }
+  .rev-title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .rev-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .rev-but{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gray{
+    background-color: #ffffff;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    &-card{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &-text{
+        padding-top: 40px;
+        margin-left: auto;
+      }
+      &-title{
+        padding-bottom: 14px;
+      }
+    }
+    &-box{
+      max-width: 100%;
+    }
+    &-title-up{
+      @include visible;
+      font-size: 32px;
+      line-height: 38px;
+
+    }
+    &-title-down{
+      @include unvisible;
+    }
+    &-box{
+      display: flex;
+      align-items: center;
+    }
+    &-editor{
+      text-align: end;
+      display: block;
+      overflow: hidden;
+    }
+    &-editor-img {
+      height: 380px;
+    }
+    }
+  .price-group{
+    grid-template-columns: (repeat(auto-fill,299px));
+  }
+}
+
+@media (min-width: 993px)and(max-width: 1120px) {
+  .price-group{
+    grid-template-columns: (repeat(auto-fill,257px 257px 299px ));
+  }
+  .price-card:last-child{
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 481px)and(max-width: 992px) {
+  .price-title{
+    font-size: 42px;
+    padding-top: 85px;
+  }
+ .price-group{
+   grid-template-columns: (repeat(auto-fill,299px 257px));
+   grid-column-gap: 5px
+ }
+  .price-card:nth-child(3){
+    padding-right: 40px;
+    background-clip: content-box;
+  }
+  .container{
+    width: auto;
+  }
+  .gray{
+    background-color: #ffffff;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    &-title-up{
+      @include visible;
+
+    }
+    &-title-down{
+      @include unvisible;
+    }
+    &-title-up{
+      font-size: 42px;
+      line-height: 44px;
+    }
+    &-editor{
+      display: flex;
+      justify-content: flex-end;
+      &-img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    &-box{
+      max-width: max-content;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .rev-title{
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 481px)and(max-width: 570px) {
+  .price-group{
+    grid-template-columns: (repeat(auto-fill,299px));
+
+  }
+  .price-card:nth-child(3){
+    padding-right: 0;
+    background-clip: content-box;
+  }
+}

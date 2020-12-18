@@ -1,0 +1,55 @@
+@import "src/scss/global/mixin";
+.intro-header{
+  width:100%;
+  height: 768px;
+  background-position-x: center;
+  background-image:url('/img/forkiowep.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.intro-testmonials{
+  width:100%;
+  background-position-x: center;
+  background-image:url('/img/testmonials.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-bottom: 5%;
+}
+.intro-gray-container{
+  background-color: #F4F4F4;
+}
+.testmonials-logo-compani{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 64px;
+
+}
+.logos1{
+  background-image:url('/img/icon-company/smashing.png');
+  width: 165px;
+}
+.logos2{
+  background-image:url('/img/icon-company/codrops.png');
+  width: 148px;
+}
+.logos3{
+  background-image:url('/img/icon-company/wert.png');
+  width: 64px;
+}
+.logos4{
+  background-image:url('/img/icon-company/PixelBuddha.png');
+  width: 225px;
+}
+.logos5{
+  background-image:url('/img/icon-company/CreativeBloq.png');
+  width: 166px;
+}
+.logos6{
+  background-image:url('/img/icon-company/tnw.png');
+  width: 108px;
+}
