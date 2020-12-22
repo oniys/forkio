@@ -85,7 +85,7 @@ function css(){
         )
 
         .pipe(webpcss())
-        .pipe(dest(path.build.css))
+        // .pipe(dest(path.build.css))
         .pipe(clean_css())
         .pipe(
             rename({
@@ -99,7 +99,7 @@ function css(){
 function js(){
     return src(path.src.js)
         .pipe(fileinclude())
-        .pipe(dest(path.build.js))
+        // .pipe(dest(path.build.js))
         .pipe(
             uglify()
         )
