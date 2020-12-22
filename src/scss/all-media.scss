@@ -42,11 +42,15 @@
     }
     &-box{
       max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     &-title-up{
       @include visible;
       font-size: 32px;
       line-height: 38px;
+      text-align: center;
+
 
     }
     &-title-down{
@@ -67,17 +71,21 @@
     }
   .price-group{
     grid-template-columns: (repeat(auto-fill,299px));
+    justify-content: center;
   }
+  .price-card:nth-child(2){
+        margin-top: 20px;
+      }
 }
 
-@media (min-width: 993px)and(max-width: 1120px) {
-  .price-group{
-    grid-template-columns: (repeat(auto-fill,257px 257px 299px ));
-  }
-  .price-card:last-child{
-    grid-column: 2;
-  }
-}
+//@media (min-width: 993px)and(max-width: 1120px) {
+//  .price-group{
+//    grid-template-columns: (repeat(auto-fill,257px 257px 299px ));
+//  }
+//  .price-card:last-child{
+//    grid-column: 2;
+//  }
+//}
 
 @media (min-width: 481px)and(max-width: 992px) {
   .price-title{
@@ -85,13 +93,22 @@
     padding-top: 85px;
   }
  .price-group{
-   grid-template-columns: (repeat(auto-fill,299px 257px));
-   grid-column-gap: 5px
+   grid-template-columns: (repeat(auto-fill,257px 257px));
+   justify-content: center;
+
+   .price-card:nth-child(3){
+   //  grid-column: 2;
+     margin-right: 20px;
+
+   }
+
+   grid-column-gap: 5px;
+   grid-row-gap: 40px;
  }
-  .price-card:nth-child(3){
-    padding-right: 40px;
-    background-clip: content-box;
-  }
+  //.price-card:nth-child(3){
+  //  padding-right: 40px;
+  //  background-clip: content-box;
+  //}
   .container{
     width: auto;
   }
@@ -102,6 +119,7 @@
     flex-direction: column;
     &-title-up{
       @include visible;
+      text-align: center;
 
     }
     &-title-down{
@@ -123,6 +141,8 @@
       max-width: max-content;
       display: flex;
       align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
   .rev-title{
@@ -133,11 +153,14 @@
 
 @media (min-width: 481px)and(max-width: 570px) {
   .price-group{
-    grid-template-columns: (repeat(auto-fill,299px));
+    //grid-template-columns: (repeat(auto-fill,299px));
+    grid-template-columns: repeat(auto-fill,minmax(210px,1fr));
+    justify-content: center;
 
   }
   .price-card:nth-child(3){
-    padding-right: 0;
-    background-clip: content-box;
+
+    padding: 0;
+    //background-clip: content-box;
   }
 }

@@ -2,18 +2,23 @@
 @import "src/scss/global/mixin";
 
 .price-group{
-  @include grid(repeat(auto-fill,257px 257px 299px 257px ),15px, 71px);
+  //@include grid(repeat(auto-fill,257px 257px 299px 257px ),15px, 71px);
+  display: grid;
+  //grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-template-columns: repeat(auto-fill,minmax(210px,1fr));
+  grid-column-gap: 50px;
+
   margin: 0 auto;
   justify-items: center;
   grid-template-rows: 457px;
-  width: fit-content;
+  //width: fit-content;
   padding-bottom: 40px;
 
 }
 
 .price-card:nth-child(3){
-  grid-template-rows: 560px;
-  transform: scale(1.2);
+  //grid-template-rows: 560px;
+  transform: scale(1.1);
   background: rgba(70, 48, 72, 0.84);
   .price-card-title{
     background: rgba(0, 0, 0, 0.11);
@@ -67,14 +72,14 @@
     }
     & > .box-line{
       width: 60px;
-      height: 5px;
+      height: 3px;
       background: #8D81AC;
       margin-top: 36px;
       margin-bottom: 36px;
     }
     & > .box-des{
       display: inline-block;
-      width: 230px;
+      width: 220px;
       height: 40px;
       font-size: 16px;
       line-height: 18px;
