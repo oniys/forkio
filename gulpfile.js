@@ -15,6 +15,7 @@ const webp = require("gulp-webp");
 const webphtml = require("gulp-webp-html");
 const webpcss = require("gulp-webpcss");
 
+
 /** - - - - - A l l - -  S O U R C E - - P R O J E C T - - - - - */
 const project_folder = "dist";
 const source_folder = "src";

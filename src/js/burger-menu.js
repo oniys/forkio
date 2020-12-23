@@ -14,7 +14,7 @@ function myFunction(x) {
 }
 
 
-let x = window.matchMedia("(max-width: 481px)")
+let x = window.matchMedia("(max-width: 480px)")
 myFunction(x)
 x.addListener(myFunction)
 
@@ -22,6 +22,10 @@ const menu = document.getElementById('menuList');
 const menuList = document.getElementById('triggerMenu')
 const toggleMenu = function() {
     menu.classList.toggle('show');
+    document.getElementById("first").classList.toggle("show");
+    document.getElementById("four").classList.toggle("show");
+    document.getElementById("second").classList.toggle("burgerY");
+    document.getElementById("third").classList.toggle("burgerX");
 }
 const btnMenu = document.getElementById("triggerMenu");
 btnMenu.addEventListener('click', function(e) {
