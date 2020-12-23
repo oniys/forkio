@@ -1,6 +1,8 @@
 @import "src/scss/global/mixin";
 @import "src/scss/global/media";
 
+
+
 .header{
   position: relative;
 }
@@ -44,8 +46,8 @@
       & .menu-link:hover{
         color: #FFFFFF;
       }
-      width: 660px;
-      margin: 0 48px;    }
+      width: 680px;
+         }
 
   & .box:nth-child(3){
     display: flex;
@@ -55,7 +57,7 @@
 
 
   & .menu-list {
-    @include flex(row, space-between, normal, nowrap);
+    @include flex(row, space-evenly, normal, nowrap);
   }
   .logo{
     font-weight: normal;

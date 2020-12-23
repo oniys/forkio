@@ -79,6 +79,9 @@
     font-weight: normal;
     padding-left: 34px;
   }
+  & .box:first-child{
+margin: 11px;
+  }
 
   .menu .box:nth-child(2) .menu-list li:hover{
     cursor: pointer;
@@ -97,9 +100,9 @@
     order: 1;
     margin: 0 5px;
   }
-  .menu .box:nth-child(3) {width: 65%;}
     .burger-menu{
     display: block;
+      padding-left: 40px;
   }
   .logo{display: none;}
   .title{
@@ -123,6 +126,7 @@
 
   .testmonials-cart-content{
     grid-row-gap: 45px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   }
   .testmonials-coment{
     margin: 0 auto;
